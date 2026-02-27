@@ -1,28 +1,28 @@
-# Descriere Proiect: Camel Invaders
+# Project Description: Camel Invaders
 
-**Camel Invaders - Joc 2D Space Shooter dezvoltat în Unity**
+**Camel Invaders – 2D Space Shooter Game developed in Unity**
 
-**Descriere:**
-Am proiectat și implementat un joc 2D de tip Space Shooter (inspirat de Space Invaders) folosind motorul grafic Unity și limbajul C#. Proiectul evidențiază capacitatea de a scrie cod modular, scalabil și de a utiliza pattern-uri de design consacrate pentru a rezolva probleme specifice dezvoltării de jocuri.
+**Description:**
+I designed and implemented a 2D Space Shooter game (inspired by *Space Invaders*) using the Unity game engine and C#. The project highlights the ability to write modular, scalable code and utilize established design patterns to solve specific problems in game development.
 
-**Aspecte Tehnice și Realizări:**
+**Technical Aspects and Achievements:**
 
-*   **Arhitectură Software:**
-    *   Implementarea pattern-ului **Singleton** pentru clasa `GameMaster` pentru a centraliza managementul stării jocului (scor, valuri de inamici, condiții de victorie/înfrângere).
-    *   Utilizarea **ScriptableObjects** pentru definirea datelor de configurare a valurilor de inamici (`WaveScriptableObject`), permițând designerilor să ajusteze dificultatea și structura nivelurilor direct din editor, fără a modifica codul.
+* **Software Architecture:**
+* Implementation of the **Singleton** pattern for the `GameMaster` class to centralize game state management (score, enemy waves, win/loss conditions).
+* Utilization of **ScriptableObjects** to define configuration data for enemy waves (`WaveScriptableObject`), allowing designers to adjust difficulty and level structure directly within the editor without modifying code.
 
-*   **Programare Orientată pe Obiecte (OOP) și Modularitate:**
-    *   Folosirea intensivă a **Interfețelor** (`IDamageable`, `IBuffable`) pentru a crea un sistem de interacțiune generic între entități. Aceasta permite ca diverse obiecte (jucător, inamici) să reacționeze la daune sau buff-uri într-un mod polimorfic, reducând dependențele strânse.
-    *   Organizarea codului în **Namespace-uri** (`CamelInvaders.GameMaster`, `CamelInvaders.Entity`, etc.) pentru o structură clară și menținerea separării responsabilităților.
+* **Object-Oriented Programming (OOP) and Modularity:**
+* Extensive use of **Interfaces** (`IDamageable`, `IBuffable`) to create a generic interaction system between entities. This allows various objects (player, enemies) to react to damage or buffs in a polymorphic manner, reducing tight coupling.
+* Organization of code into **Namespaces** (`CamelInvaders.GameMaster`, `CamelInvaders.Entity`, etc.) for a clear structure and maintenance of the separation of concerns.
 
-*   **Gameplay și Mecanici:**
-    *   Dezvoltarea controlerului jucătorului (`Player.cs`) care gestionează input-ul, fizica mișcării și sistemele de luptă.
-    *   Implementarea unui sistem de **Scut Regenerabil** și Health Management.
-    *   Sistem de arme diversificat (Lasere cu rată de foc rapidă, Rachete).
-    *   Logică de **Enemy Spawning** dinamică și comportament de mișcare în grup al inamicilor.
+* **Gameplay and Mechanics:**
+* Development of the player controller (`Player.cs`) managing input, movement physics, and combat systems.
+* Implementation of a **Regenerating Shield** system and Health Management.
+* Diversified weapon system (Rapid-fire lasers, Missiles).
+* Dynamic **Enemy Spawning** logic and group movement behavior for enemies.
 
-*   **UI și Feedback:**
-    *   Integrarea sistemelor de UI (Health Bars, Shield Bars, meniuri) și sincronizarea acestora în timp real cu starea internă a jocului.
-    *   Managementul sistemului audio pentru efecte sonore și feedback.
+* **UI and Feedback:**
+* Integration of UI systems (Health Bars, Shield Bars, menus) and their real-time synchronization with the internal game state.
+* Audio system management for sound effects and feedback.
 
-**Tehnologii:** C#, Unity 2022+, Git.
+**Technologies:** C#, Unity 2022+, Git.
